@@ -82,17 +82,25 @@ git merge upstream/master
 
 ### Push
 
-Ahora para subir nuestros cambios locales al repositorio online, hay que "pushear" nuestros commits. El repositorio online es conocido por git como `origin`. Y la rama a la cual queremos pushear es a la principal, `master`.
+Ahora para subir nuestros cambios locales al repositorio online, hay que "pushear" nuestros commits. El repositorio online es conocido por git como `origin`. Y la rama a la cual queremos pushear es a la principal, `master`. **Acordate de pullearte los cambios antes!**
 
 ```console
 git push origin master
 ```
 
+### En caso de confilctos:
+Los conflictos aparecen cuando se escribio sobre una version antigua de lo que se edito. Para esto, luego de que salga el mensaje de confilto, debes ir a los archivos afectados, en este caso seria cuentos.md y veras ago como `<<<<<<<<HEAD y luego un  <<<<<<<<<<< @4324324` donde head es lo que estaba subido al repo original antes de tus cambios y la segunda parte so ntus cambios. Deberas solucionar esto dejando como quedaria el archivo con lo ultimo subido al original y tus cambios (sin los <<<), guardarlo y luego hacer un 
+
+```console
+git rebase -- continue
+```
+luego de eso, podes efectivamente hacer el push.
+
 ### Pull Request
 
-Para finalizar solo queda hacer una Pull Request que es informarle al autor original que querés hacerle cambios a su repositorio, esta debe realizarse desde github.
+Para finalizar solo queda hacer una Pull Request que es informarle al autor original que querés hacerle cambios a su repositorio, esta debe realizarse desde el repositorio del autor del repo en github.
 
-Para esto debes ir a tu fork y clickear en el botón `new pull request` y decirle que queremos mergear desde un fork, hasta la rama master del repositorio original.
+Para esto debes clickear en el botón `new pull request` y decirle que queremos mergear desde un fork, hasta la rama master del repositorio original.
 
 Si el autor original acepta los cambios, se hace el merge y pasan todos los commits de tu fork al repo original.
 
