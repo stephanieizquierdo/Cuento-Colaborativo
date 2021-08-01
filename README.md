@@ -1,6 +1,6 @@
 # Cuento Colaborativo :book:
 
-Guia basica de git en la cual cada usuario escribe frases y se va formando así un cuento.
+Guía básica de git en la cual cada usuario escribe frases y se va formando así un cuento.
 
 ### Creación de cuenta
 
@@ -31,7 +31,15 @@ Cuando se hace un fork de un repositorio, se crea un nuevo repositorio en tu cue
 
 ### Clone
 
-Una vez creado el fork, podemos hacer una copia del repositorio en nuestra PC para editarlo. En la terminal debemos poner:
+Una vez creado el fork, podemos hacer una copia del repositorio en nuestra PC para editarlo.
+
+En la terminal debemos poner:
+
+```console
+git clone ACA-VA-EL-LINK-DEL-REPO-A-CLONEAR
+```
+En este caso:
+
 ```console
 git clone https://github.com/TUUSUARIO/Cuento-Colaborativo.git
 ```
@@ -51,7 +59,7 @@ git commit -m "DESCRIPCION DE LOS CAMBIOS"
 
 Con el comando -m agregamos un mensaje a nuestro commit, recorda que debe ser descriptivo y consiso. Estos mensajes sirve mucho para informar nuestros cambios sin necesidad de ver los archivos modificados.
 
-### Actualizar el Fork (opcional)
+### Actualizar el Fork
 
 Al ser el repositorio original público, más personas pueden estar haciendo cambios como vos y el repo original se va actualizando con estos. Para asegurarnos que tenemos la última ultisima versión y tenemos los archivos actualizados, podemos crearnos un repositorio remoto "upstream" que apunte al repositorio original:
 
