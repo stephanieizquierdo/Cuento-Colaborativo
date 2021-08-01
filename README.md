@@ -88,11 +88,11 @@ Ahora para subir nuestros cambios locales al repositorio online, hay que "pushea
 git push origin master
 ```
 
-### En caso de confilctos:
-Los conflictos aparecen cuando se escribio sobre una version antigua de lo que se edito. Para esto, luego de que salga el mensaje de confilto, debes ir a los archivos afectados, en este caso seria cuentos.md y veras ago como `<<<<<<<<HEAD y luego un  <<<<<<<<<<< @4324324` donde head es lo que estaba subido al repo original antes de tus cambios y la segunda parte so ntus cambios. Deberas solucionar esto dejando como quedaria el archivo con lo ultimo subido al original y tus cambios (sin los <<<), guardarlo y luego hacer un 
+#### En caso de confilctos:
+Los conflictos aparecen cuando se escribio sobre una version antigua de lo que se edito. Para esto, luego de que salga el mensaje de confilto, debes ir a los archivos afectados, en este caso seria cuentos.md y veras ago como `<<<<<<<<HEAD` y luego un  `<<<<<<<<<<< @4324324` donde head es lo que estaba subido al repo original antes de tus cambios y la segunda parte so ntus cambios. Deberas solucionar esto dejando como quedaria el archivo con lo ultimo subido al original y tus cambios (sin los <<<), guardarlo y luego hacer un 
 
 ```console
-git rebase -- continue
+git rebase --continue
 ```
 luego de eso, podes efectivamente hacer el push.
 
