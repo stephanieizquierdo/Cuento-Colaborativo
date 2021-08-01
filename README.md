@@ -45,15 +45,17 @@ git clone https://github.com/TUUSUARIO/Cuento-Colaborativo.git
 ```
 Esto nos crea un repositorio local desde el fork de github.
 
-### Commits
+
+### Add y Commits
 
 Ahora que ya tenes los archivos, podes modificarlos a gusto!!
 
 La idea de este repo es que te dirijas a la parte de cuento.md y agregues una frase, no hace falta que te leas toda la historia, la idea es ver que surge de la espontaneidad. _Subir cosas familyfriendly_ :eyes:
 
-Luego de que hayas hecho tus cambios debes commitearlo para ir guardandolos localmente en tu repositorio.
+Luego de que hayas hecho tus cambios debes agregarlos y commitearlos para ir guardandolos localmente en tu repositorio.
 
 ```console
+git add cuento.md
 git commit -m "DESCRIPCION DE LOS CAMBIOS"
 ```
 
@@ -69,12 +71,7 @@ git remote add upstream https://github.com/stephanieizquierdo/Cuento-Colaborativ
 Luego debemos bajarnos los cambios del repositorio original con un **pull**:
 
 ```console
-git pull upstream
-```
-Procedemos volviendo a la rama principal de nuestro fork:
-
-```console
-git checkout master
+git pull upstream master
 ```
 
 Y por último mergeamos los cambios desde el original a nuestro fork.
