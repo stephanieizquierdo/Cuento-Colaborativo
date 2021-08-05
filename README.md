@@ -96,7 +96,7 @@ git rebase --continue
 ```
 luego de eso, podes efectivamente hacer el push.
 
-Nota: en este caso al tener solo una rama, el git rebase muy parecido al merge. En caso de tener mas ramas es preferible usar un merge.
+Nota: en este caso al tener solo una rama, el git rebase es muy parecido al merge. En caso de tener mas ramas es preferible usar un merge.
 
 ### Pull Request
 
